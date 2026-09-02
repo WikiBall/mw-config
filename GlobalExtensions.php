@@ -36,6 +36,7 @@ wfLoadExtensions( [
 	'RottenLinks',
 	'Scribunto',
 	// 'SecureLinkFixer',
+	'SMSPhoneVerification',
 	'SpamBlacklist',
 	'Speedscope',
 	// 'StopForumSpam',
