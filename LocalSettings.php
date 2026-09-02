@@ -1,6 +1,6 @@
 <?php
 
-/** LocalSettings.php for Miraheze. */
+/** LocalSettings.php for WikiBall. */
 
 // Don't allow web access.
 if ( !defined( 'MEDIAWIKI' ) ) {
@@ -91,8 +91,8 @@ if ( $forceprofile === 1 && extension_loaded( 'xhprof' ) ) {
 $wgDatabaseClustersMaintenanceType = 'unscheduled';
 $wgDatabaseClustersMaintenance = [];
 
-require_once '/srv/mediawiki/config/initialise/MirahezeFunctions.php';
-$wi = new MirahezeFunctions();
+require_once '/srv/mediawiki/config/initialise/WikiBallFunctions.php';
+$wi = new WikiBallFunctions();
 
 // Load PrivateSettings (e.g. $wgDBpassword)
 require_once '/srv/mediawiki/config/PrivateSettings.php';
@@ -101,8 +101,8 @@ require_once '/srv/mediawiki/config/PrivateSettings.php';
 require_once '/srv/mediawiki/config/GlobalExtensions.php';
 require_once '/srv/mediawiki/config/GlobalSkins.php';
 
-$wgPasswordSender = 'noreply@miraheze.org';
-$wmgUploadHostname = 'static.wikitide.net';
+$wgPasswordSender = 'noreply@wikiball.org';
+$wmgUploadHostname = 'cdn.wikiball.org';
 
 // bast161, bast181
 $servers = [ '10.0.16.127', '10.0.18.101' ];
@@ -333,14 +333,14 @@ $wgConf->settings += [
 		'default' => [
 			'spam' => [
 				'files' => [
-					'https://meta.miraheze.org/wiki/MediaWiki:Global_spam_blacklist?action=raw&sb_ver=1',
+					'https://meta.wikiball.org/wiki/MediaWiki:Global_spam_blacklist?action=raw&sb_ver=1',
 				],
 			],
 		],
 		'beta' => [
 			'spam' => [
 				'files' => [
-					'https://meta.mirabeta.org/wiki/MediaWiki:Global_spam_blacklist?action=raw&sb_ver=1',
+					'https://meta.wikiballbeta.org/wiki/MediaWiki:Global_spam_blacklist?action=raw&sb_ver=1',
 				],
 			],
 		],
@@ -594,15 +594,15 @@ $wgConf->settings += [
 	],
 	'wmgCentralAuthAutoLoginWikis' => [
 		'default' => [
-			'.miraheze.org' => 'metawiki',
+			'.wikiball.org' => 'metawiki',
 		],
 		'beta' => [
-			'.mirabeta.org' => 'metawikibeta',
+			'.wikiballbeta.org' => 'metawikibeta',
 		],
 	],
 	'wgGlobalRenameDenylist' => [
-		'default' => 'https://meta.miraheze.org/wiki/MediaWiki:Global_rename_blacklist?action=raw',
-		'beta' => 'https://meta.mirabeta.org/wiki/MediaWiki:Global_rename_blacklist?action=raw',
+		'default' => 'https://meta.wikiball.org/wiki/MediaWiki:Global_rename_blacklist?action=raw',
+		'beta' => 'https://meta.wikiball.org/wiki/MediaWiki:Global_rename_blacklist?action=raw',
 	],
 	'wgGlobalRenameDenylistRegex' => [
 		'default' => true,
@@ -615,16 +615,16 @@ $wgConf->settings += [
 		'metawikibeta' => true,
 	],
 	'wgCentralSelectedBannerDispatcher' => [
-		'default' => 'https://meta.miraheze.org/wiki/Special:BannerLoader',
-		'beta' => 'https://meta.mirabeta.org/wiki/Special:BannerLoader',
+		'default' => 'https://meta.wikiball.org/wiki/Special:BannerLoader',
+		'beta' => 'https://meta.wikiballbeta.org/wiki/Special:BannerLoader',
 	],
 	'wgCentralBannerRecorder' => [
-		'default' => 'https://meta.miraheze.org/wiki/Special:RecordImpression',
-		'beta' => 'https://meta.mirabeta.org/wiki/Special:RecordImpression',
+		'default' => 'https://meta.wikiball.org/wiki/Special:RecordImpression',
+		'beta' => 'https://meta.wikiballbeta.org/wiki/Special:RecordImpression',
 	],
 	'wgCentralHost' => [
-		'default' => 'https://meta.miraheze.org',
-		'beta' => 'https://meta.mirabeta.org',
+		'default' => 'https://meta.wikiball.org',
+		'beta' => 'https://meta.wikiballbeta.org',
 	],
 	'wgNoticeProjects' => [
 		'default' => [
@@ -721,7 +721,7 @@ $wgConf->settings += [
 		'default' => true,
 	],
 	'wgCitizenEnableCJKFonts' => [
-		'default' => false,
+		'default' => true,
 	],
 	'wgCitizenOverflowNowrapClasses' => [
 		'default' => [
@@ -951,11 +951,11 @@ $wgConf->settings += [
 	],
 	'wgCreateWikiDisallowedSubdomains' => [
 		'default' => [
-			'(.*)miraheze(.*)',
-			'(.*)wikitide(.*)',
+			'(.*)wikiball(.*)',
+			'(.*)wikiballbeta(.*)',
 			'(.*)orain(.*)',
-			'(.*)mirabeta(.*)',
-			'(.*)betaheze(.*)',
+			'(.*)wikiballbeta(.*)',
+			'(.*)betawikiball(.*)',
 			'(.*)nexttide(.*)',
 			'subdomain',
 			'example',
@@ -1919,8 +1919,8 @@ $wgConf->settings += [
 	// Footers
 	'+wgFooterIcons' => [
 		'default' => [
-			'miraheze' => [
-				'miraheze' => [
+			'wikiball' => [
+				'wikiball' => [
 					'src' => 'https://static.wikitide.net/commonswiki/f/fe/Powered_by_Miraheze_(no_box).svg',
 					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
 					'alt' => 'Hosted by Miraheze',
@@ -1935,8 +1935,8 @@ $wgConf->settings += [
 					'alt' => 'Powered by MediaWiki',
 				],
 			],
-			'miraheze' => [
-				'miraheze' => [
+			'wikiball' => [
+				'wikiball' => [
 					'src' => 'https://static.wikitide.net/utgwiki/8/81/Miraheze_badge.svg',
 					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
 					'alt' => 'Hosted by Miraheze',
@@ -2891,14 +2891,11 @@ $wgConf->settings += [
 	'wgMaxAnimatedGifArea' => [
 		'default' => '1.25e7',
 	],
-	'wgMirahezeCommons' => [
+	'wgWikiBallCommons' => [
 		'default' => true,
 	],
 	'wgMirahezeReportsBlockAlertKeywords' => [
 		'default' => [
-			'underage',
-			'under age',
-			'under 13',
 			'death threats',
 			'death threat',
 			'child pornography',
@@ -3028,14 +3025,14 @@ $wgConf->settings += [
 	'+wgResourceLoaderSources' => [
 		'default' => [
 			'metawiki' => [
-				'apiScript' => '//meta.miraheze.org/w/api.php',
-				'loadScript' => '//meta.miraheze.org/w/load.php',
+				'apiScript' => '//meta.wikiball.org/w/api.php',
+				'loadScript' => '//meta.wikiball.org/w/load.php',
 			],
 		],
 		'beta' => [
 			'metawikibeta' => [
-				'apiScript' => '//meta.mirabeta.org/w/api.php',
-				'loadScript' => '//meta.mirabeta.org/w/load.php',
+				'apiScript' => '//meta.wikiballbeta.org/w/api.php',
+				'loadScript' => '//meta.wikiballbeta.org/w/load.php',
 			],
 		],
 	],
@@ -3190,35 +3187,35 @@ $wgConf->settings += [
 	// IncidentReporting
 	'wgIncidentReportingServices' => [
 		'default' => [
-			'Bacula' => 'https://meta.miraheze.org/wiki/Tech:Bacula',
-			'Bastion' => 'https://meta.miraheze.org/wiki/Tech:Bastion',
+			'Bacula' => 'https://meta.wikiball.org/wiki/Tech:Bacula',
+			'Bastion' => 'https://meta.wikiball.org/wiki/Tech:Bastion',
 			'Cloud Infrastructure' => false,
-			'ElasticSearch' => 'https://meta.miraheze.org/wiki/Tech:ElasticSearch',
-			'DNS' => 'https://meta.miraheze.org/wiki/Tech:DNS',
-			'Ganglia' => 'https://meta.miraheze.org/wiki/Tech:Ganglia',
-			'GlusterFS' => 'https://meta.miraheze.org/wiki/Tech:GlusterFS',
-			'Grafana' => 'https://meta.miraheze.org/wiki/Tech:Grafana',
-			'Icinga' => 'https://meta.miraheze.org/wiki/Tech:Icinga',
-			'LizardFS' => 'https://meta.miraheze.org/wiki/Tech:LizardFS',
-			'Mail' => 'https://meta.miraheze.org/wiki/Tech:Mail',
-			'MariaDB' => 'https://meta.miraheze.org/wiki/Tech:MariaDB',
-			'Matomo' => 'https://meta.miraheze.org/wiki/Tech:Matomo',
-			'MediaWiki' => 'https://meta.miraheze.org/wiki/Tech:MediaWiki_appserver',
-			'Memcached' => 'https://meta.miraheze.org/wiki/Tech:Memcached',
-			'NFS' => 'https://meta.miraheze.org/wiki/Tech:NFS',
-			'NGINX' => 'https://meta.miraheze.org/wiki/Tech:Nginx',
-			'Parsoid' => 'https://meta.miraheze.org/wiki/Tech:Parsoid',
-			'Phorge' => 'https://meta.miraheze.org/wiki/Tech:Phorge',
-			'Puppet Server' => 'https://meta.miraheze.org/wiki/Tech:Puppet',
-			'Redis' => 'https://meta.miraheze.org/wiki/Tech:Redis',
-			'Salt' => 'https://meta.miraheze.org/wiki/Tech:Salt',
+			'ElasticSearch' => 'https://meta.wikiball.org/wiki/Tech:ElasticSearch',
+			'DNS' => 'https://meta.wikiball.org/wiki/Tech:DNS',
+			'Ganglia' => 'https://meta.wikiball.org/wiki/Tech:Ganglia',
+			'GlusterFS' => 'https://meta.wikiball.org/wiki/Tech:GlusterFS',
+			'Grafana' => 'https://meta.wikiball.org/wiki/Tech:Grafana',
+			'Icinga' => 'https://meta.wikiball.org/wiki/Tech:Icinga',
+			'LizardFS' => 'https://meta.wikiball.org/wiki/Tech:LizardFS',
+			'Mail' => 'https://meta.wikiball.org/wiki/Tech:Mail',
+			'MariaDB' => 'https://meta.wikiball.org/wiki/Tech:MariaDB',
+			'Matomo' => 'https://meta.wikiball.org/wiki/Tech:Matomo',
+			'MediaWiki' => 'https://meta.wikiball.org/wiki/Tech:MediaWiki_appserver',
+			'Memcached' => 'https://meta.wikiball.org/wiki/Tech:Memcached',
+			'NFS' => 'https://meta.wikiball.org/wiki/Tech:NFS',
+			'NGINX' => 'https://meta.wikiball.org/wiki/Tech:Nginx',
+			'Parsoid' => 'https://meta.wikiball.org/wiki/Tech:Parsoid',
+			'Phorge' => 'https://meta.wikiball.org/wiki/Tech:Phorge',
+			'Puppet Server' => 'https://meta.wikiball.org/wiki/Tech:Puppet',
+			'Redis' => 'https://meta.wikiball.org/wiki/Tech:Redis',
+			'Salt' => 'https://meta.wikiball.org/wiki/Tech:Salt',
 			'Service Providers' => false,
-			'Swift' => 'https://meta.miraheze.org/wiki/Tech:Swift',
-			'Varnish' => 'https://meta.miraheze.org/wiki/Tech:Varnish',
+			'Swift' => 'https://meta.wikiball.org/wiki/Tech:Swift',
+			'Varnish' => 'https://meta.wikiball.org/wiki/Tech:Varnish',
 		],
 	],
 	'wgIncidentReportingTaskUrl' => [
-		'default' => 'https://issue-tracker.miraheze.org/',
+		'default' => 'https://issue-tracker.wikiball.org/',
 	],
 
 	// Interwiki
@@ -3302,6 +3299,13 @@ $wgConf->settings += [
 				'dbname' => '$2wiki',
 				'baseTransOnly' => true,
 			],
+	        'wikiball' => [
+	            /** WikiBall */
+	            'interwiki' => 'wb',
+	            'url' => 'https://$2.wikiball.org/wiki/$1',
+				'dbname' => '$2wiki',
+				'baseTransOnly' => true,
+			],
 			'wikitide' => [
 				/** WikiTide */
 				'interwiki' => 'wt',
@@ -3320,13 +3324,14 @@ $wgConf->settings += [
 				/** WikiOasis */
 				'interwiki' => 'woasis',
 				'url' => 'https://$2.wikioasis.org/wiki/$1',
+	            'dbname' => '$2wiki'
 				'baseTransOnly' => true,
 			],
 		],
 		'+utgwiki' => [
 			'translate' => [
 				'interwiki' => 'transl',
-				'url' => 'https://utg-miraheze-org.translate.goog/wiki/$1?_x_tr_sl=en&_x_tr_tl=$2',
+				'url' => 'https://utg-wikiball-org.translate.goog/wiki/$1?_x_tr_sl=en&_x_tr_tl=$2',
 				'baseTransOnly' => true,
 			],
 		],
@@ -3345,7 +3350,8 @@ $wgConf->settings += [
 		'default' => [
 			'fandom.com' => 'wikia',
 			'miraheze.org' => 'mh',
-			// 'wikitide.org' => 'wt',
+			'wikitide.org' => 'wt',
+	        'wikiball.org' => 'wb',
 		],
 	],
 	'wgImportDumpScriptCommand' => [
@@ -3844,7 +3850,7 @@ $wgConf->settings += [
 		'default' => false,
 	],
 	'wgEmergencyContact' => [
-		'default' => 'noreply@miraheze.org',
+		'default' => 'noreply@wikiball.org',
 	],
 	'wgAllowHTMLEmail' => [
 		'default' => true,
@@ -4760,6 +4766,8 @@ $wgConf->settings += [
 			// Only the board are allowed access
 			// DO NOT ADD UNAUTHORIZED USERS
 			'iowiki' => [
+                /** Anagrams in Nuts */
+                19288,
 				/** Labster */
 				2551,
 				/** Harej */
@@ -4778,6 +4786,8 @@ $wgConf->settings += [
 			// Only the board and Technology team are allowed access
 			// DO NOT ADD UNAUTHORIZED USERS
 			'staffwiki' => [
+                /** Anagrams in Nuts (Board) */
+                19288,
 				/** Labster (Board) */
 				2551,
 				/** Harej (Board) */
@@ -4900,14 +4910,14 @@ $wgConf->settings += [
 	],
 	'wgCrossSiteAJAXdomains' => [
 		'default' => [
-			'login.miraheze.org',
+			'login.wikiball.org',
 		],
 		'beta' => [
-			'login.mirabeta.org',
+			'login.wikiball.org',
 		],
 		'private' => [],
 		'wikicreatorswiki' => [
-			'meta.miraheze.org',
+			'meta.wikiball.org',
 		],
 	],
 	'wgWhitelistRead' => [
@@ -5921,9 +5931,9 @@ $wgConf->settings += [
 	],
 	'wgRequestCustomDomainDisallowedDomains' => [
 		'default' => [
-			'miraheze.org',
-			'miraheze.wiki',
-			'mira.wiki',
+			'wikiball.org',
+			'wikiball.wiki',
+			'wball.wiki',
 			'orain.org',
 			'wikitide.org',
 			'wikitide.com',
@@ -5932,11 +5942,12 @@ $wgConf->settings += [
 		],
 	],
 	'wgRequestCustomDomainSubdomain' => [
-		'default' => 'miraheze.org',
-		'beta' => 'mirabeta.org',
+		'default' => 'wikiball.org',
+		'beta' => 'wikiballbeta.org',
 	],
 	'wgRequestCustomDomainUsersNotifiedOnAllRequests' => [
 		'default' => [
+            'Anagrams in Nuts',
 			'MacFan4000 (Miraheze)',
 			'Original Authority',
 			'Universal Omega',
@@ -6631,7 +6642,7 @@ $wgConf->settings += [
 		'default' => '/favicon.ico',
 	],
 	'wgLogo' => [
-		'default' => "https://$wmgUploadHostname/metawiki/3/35/Miraheze_Logo.svg",
+		'default' => "https://$wmgUploadHostname/metawiki/3/35/WikiBall_Logo.svg",
 	],
 	'wgIcon' => [
 		'default' => false,
@@ -7071,7 +7082,7 @@ $wgConf->settings += [
 	],
 	'wgVectorNightMode' => [
 		'1.45' => [
-			'logged_out' => false,
+			'logged_out' => ture,
 			'logged_in' => true,
 			'beta' => false,
 		],
