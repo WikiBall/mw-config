@@ -7,9 +7,9 @@ use MediaWiki\FileRepo\ForeignDBViaLBRepo;
 use MediaWiki\Password\InvalidPassword;
 use MediaWiki\PoolCounter\PoolCounterClient;
 use MediaWiki\RCFeed\UDPRCFeedEngine;
-use Miraheze\MirahezeMagic\Maintenance\GenerateManageWikiBackup;
-use Miraheze\MirahezeMagic\Maintenance\SwiftDump;
-use Miraheze\MirahezeMagic\MirahezeIRCRCFeedFormatter;
+use WikiBall\WikiBallMagic\Maintenance\GenerateManageWikiBackup;
+use WikiBall\WikiBallMagic\Maintenance\SwiftDump;
+use WikiBall\WikiBallMagic\WikiBallIRCRCFeedFormatter;
 
 $wgHooks['CreateWikiGenerateDatabaseLists'][] = 'MirahezeFunctions::onGenerateDatabaseLists';
 $wgHooks['ManageWikiCoreAddFormFields'][] = 'MirahezeFunctions::onManageWikiCoreAddFormFields';
@@ -115,7 +115,7 @@ if ( $wi->isAnyOfExtensionsActive( 'StandardDialogs', 'SimpleBlogPage' ) ) {
 	wfLoadExtension( 'OOJSPlus' );
 }
 
-if ( $wgMirahezeCommons && !$cwPrivate ) {
+if ( $wgWikiBallCommons && !$cwPrivate ) {
 	wfLoadExtension( 'GlobalUsage' );
 }
 
@@ -128,7 +128,7 @@ if ( $wi->isAllOfExtensionsActive( '3D', 'MultimediaViewer' ) ) {
 }
 
 if ( $wi->isExtensionActive( 'Phonos' ) ) {
-	$wgPhonosFileBackend = 'miraheze-swift';
+	$wgPhonosFileBackend = 'wikiball-swift';
 }
 
 if ( $wi->isExtensionActive( 'Popups' ) ) {
@@ -146,7 +146,7 @@ if ( $wi->isExtensionActive( 'SemanticMediaWiki' ) ) {
 
 if ( $wi->isExtensionActive( 'SocialProfile' ) ) {
 	require_once "$IP/extensions/SocialProfile/SocialProfile.php";
-	$wgSocialProfileFileBackend = 'miraheze-swift';
+	$wgSocialProfileFileBackend = '-swift';
 	$wgUserBoardAllowPrivateMessages = false;
 }
 
