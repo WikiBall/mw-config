@@ -3603,9 +3603,9 @@ $wgManageWikiSettings = [
 		'from' => 'mediawiki',
 		'global' => true,
 		'type' => 'text',
-		'overridedefault' => "https://$wmgUploadHostname/metawiki/3/35/Miraheze_Logo.svg",
+		'overridedefault' => "https://$wmgUploadHostname/metawiki/3/35/WikiBall_Logo.svg",
 		'section' => 'styling',
-		'help' => 'This will replace Miraheze\'s default logo. See [[m:Help:How_to_change_my_logo_or_favicon|this link]] for how you can change it. Also sets the value of <code>$wgLogos[\'1x\']</code>.',
+		'help' => 'This will replace WikiBall\'s default logo. See [[m:Help:How_to_change_my_logo_or_favicon|this link]] for how you can change it. Also sets the value of <code>$wgLogos[\'1x\']</code>.',
 		'requires' => [],
 	],
 	'wmgGalleryOptionsImagesPerRow' => [
@@ -3793,7 +3793,7 @@ $wgManageWikiSettings = [
 			'Beta feature' => 'beta',
 		],
 		'overridedefault' => [
-			'logged_out' => false,
+			'logged_out' => true,
 			'logged_in' => true,
 			'beta' => false,
 		],
