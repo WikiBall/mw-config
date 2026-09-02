@@ -6479,6 +6479,22 @@ $wgConf->settings += [
 		'default' => true,
 	],
 
+	// SMSPhoneVerification
+$wgSMSPhoneVerificationEnabled = true;
+
+$wgSMSPhoneVerificationCodeLength = 6;
+
+$wgSMSPhoneVerificationCodeLifetime = 300; // seconds
+
+$wgSMSPhoneVerificationMaxAttempts = 5;
+
+$wgSMSPhoneVerificationRequireVerification = false;
+
+$wgSMSPhoneVerificationPrefix = 'WBM',
+
+$wgSMSPhoneVerificationProvider = 'Twilio',
+	
+
 	// Site notice opt out
 	'wmgSiteNoticeOptOut' => [
 		'default' => false,
