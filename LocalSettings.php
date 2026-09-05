@@ -6477,21 +6477,33 @@ $wgConf->settings += [
 	],
 
 	// SMSPhoneVerification
-$wgSMSPhoneVerificationEnabled = true;
+    'wgSMSPhoneVerificationEnabled' => [
+	    'default' => true,
+	],
 
-$wgSMSPhoneVerificationCodeLength = 6;
+    'wgSMSPhoneVerificationCodeLength' => [ 
+	    'default' => 6,
+    ],
+    'wgSMSPhoneVerificationCodeLifetime' => [
+	    'default' => 300, // seconds
+	],
 
-$wgSMSPhoneVerificationCodeLifetime = 300; // seconds
+    'wgSMSPhoneVerificationMaxAttempts' => [
+	    'default' => 5,
+    ],
+    'wgSMSPhoneVerificationRequireVerification => [
+	    'default' => false,
+    ],		
+    'wgSMSPhoneVerificationPrefix' => [
+	    'default' => 'WBW',
+		'metawiki' => 'WBM',
+	],
 
-$wgSMSPhoneVerificationMaxAttempts = 5;
+    'wgSMSPhoneVerificationProvider' => [ 
+	    'default' => 'Twilio',
+	],
 
-$wgSMSPhoneVerificationRequireVerification = false;
-
-$wgSMSPhoneVerificationPrefix = 'WBM',
-
-$wgSMSPhoneVerificationProvider = 'Twilio',
 	
-
 	// Site notice opt out
 	'wmgSiteNoticeOptOut' => [
 		'default' => false,
