@@ -28,11 +28,11 @@ class MirahezeFunctions {
 
 	private const array ALLOWED_DOMAINS = [
 		'default' => [
-			'miraheze.org',
+			'wikiball.org',
 			'wikitide.org',
 		],
 		'beta' => [
-			'mirabeta.org',
+			'wikiballbeta.org',
 			'nexttide.org',
 		],
 	];
@@ -47,17 +47,17 @@ class MirahezeFunctions {
 	];
 
 	private const array DEFAULT_SERVER = [
-		'default' => 'miraheze.org',
-		'beta' => 'mirabeta.org',
+		'default' => 'wikiball.org',
+		'beta' => 'wikiballbeta.org',
 	];
 
 	private const array SHARED_DOMAIN = [
-		'default' => 'auth.miraheze.org',
-		'beta' => 'auth.mirabeta.org',
+		'default' => 'auth.wikiball.org',
+		'beta' => 'auth.wikiballbeta.org',
 	];
 
 	private const array GLOBAL_DATABASE = [
-		'default' => 'mhglobal',
+		'default' => 'wbglobal',
 		'beta' => 'testglobal',
 	];
 
@@ -70,8 +70,8 @@ class MirahezeFunctions {
 
 	public const array MEDIAWIKI_VERSIONS = [
 		'alpha' => '1.46',
-		'beta' => '1.46',
-		'stable' => '1.45',
+		'beta' => '1.47',
+		'stable' => '1.46',
 	];
 
 	public const array SUFFIXES = [
