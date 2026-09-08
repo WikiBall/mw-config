@@ -16,7 +16,7 @@ echo <<<EOF
 <link rel="icon" type="image/x-icon" href="https://cdn.wikioasis.org/images/metawiki/1/18/favicon.ico" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Wiki Deleted</title>
+<title>Wiki Deleted – WikiBall</title>
 <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
 <style type="text/css">
 * {
@@ -162,13 +162,13 @@ h1 {
 <body>
 
 <div class="container">
-    <img class="logo" src="https://cdn.wikioasis.org/metawiki/3/38/WikiOasis_Logo.png" alt="WikiOasis Logo" />
+    <img class="logo" src="https://cdn.wikiball.org/metawiki/3/38/WikiBall_Logo.png" alt="WikiBall Logo" />
     <div class="content">
         <h1>Wiki Deleted</h1>
         <p class="url">{$encHost}{$encUrl}</p>
         <p class="description">This wiki has been marked as deleted.</p>
         <div class="buttons">
-            <a href="https://meta.wikioasis.org/" class="btn">Go home</a>
+            <a href="https://meta.wikiball.org/" class="btn">Go home</a>
             <a href="https://discord.gg/GrrTcsVC2x" class="btn">Discord</a>
         </div>
     </div>
