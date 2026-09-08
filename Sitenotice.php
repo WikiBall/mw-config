@@ -28,32 +28,21 @@ function wfGlobalSiteNotice( &$siteNotice, $skin ) {
 
 	$siteNotice .= <<<EOF
 		<table style="width: 100%; font-size: 120%; border-left: 4px solid #fc3; background-color: #d5fdf4; border-left-color: #00af89; padding: 10px 15px; color: black !important;">
-			<tbody>
-				<div data-nosnippet style="padding-top:0.3em; padding-bottom:0.1em;">
-					<tr>
-						<td rowspan=2><div style="float: left;"><img alt="Server maintenance" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/OOjs_UI_icon_desktop.svg" decoding="async" width="40" height="40"></div></td>
-						<td>
-							<div style="font-weight: bold; color: black;">
-								Server maintenance
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div style="padding-bottom: 15px; font-size: 13pt; color: black;">
-								Miraheze will be performing upgrades on cloud servers on March 5, 2026 from 20:00 to March 6 03:00 UTC. During this time Miraheze will be completely unavailable. We apologize for the inconvenience and thank you for your understanding.
-							</div>
-						</td>
-					</tr>
-				</div>
-			</tbody>
+		<div style="background: linear-gradient(135deg, #3650b8 0%, #0050b4 100%); border-radius: 16px; padding: 2rem; color: white; text-align: center; margin-bottom: 1.5rem; position: relative; overflow: hidden;">
+		<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 2px, transparent 2px), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 1.5px, transparent 1.5px); background-size: 100px 100px, 150px 150px;"></div>
+        <div style="position: relative; z-index: 1;">
+        <div style="font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 800; margin-bottom: 0.75rem; line-height: 1.1;">Release to staff</div>
+        <div style="font-size: clamp(0.95rem, 2.5vw, 1.15rem); opacity: 0.9; font-weight: 300;">WikiBall has just released. Please wait until it generally launches.</div>
+        </div>
+        </div>
 		</table>
 	EOF;
 } */
 
 // }
 
-// Specific wiki SiteNotice
+// Specific 
+	SiteNotice
 /* if ( $wi->isExtensionActive( 'Graph' ) ) {
 	$wgHooks['SiteNoticeAfter'][] = 'wfConditionalSiteNotice';
 
