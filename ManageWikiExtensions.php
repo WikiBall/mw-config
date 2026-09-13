@@ -3108,7 +3108,7 @@ $wgManageWikiExtensions = [
 	'semanticmediawiki' => [
 		'name' => 'SemanticMediaWiki',
 		'linkPage' => 'https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:SemanticMediaWiki',
-		'help' => '<br />Permanently "experimental" and may be removed with little to no prior notice. Only enabled for extenuating circumstances such when migrating from other services. Consider using [[weirdgloop:Extension:Bucket|Bucket]] or [[mw:Extension:Cargo|Cargo]] instead. WARNING: Disabling this extension after it\'s already been enabled will clear all SemanticMediaWiki database tables as well.',
+		'help' => '<br />Permanently "experimental" and may be removed with little to no prior notice. Only enabled for extenuating circumstances such when migrating from other services. Consider using [[weirdgloop:Extension:Bucket|Bucket]] instead. WARNING: Disabling this extension after it\'s already been enabled will clear all SemanticMediaWiki database tables as well.',
 		'conflicts' => false,
 		'contentModels' => [
 			'smw/schema',

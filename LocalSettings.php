@@ -1924,6 +1924,74 @@ $wgConf->settings += [
 				],
 			],
 		],
+		'100bangaiwiki' => [
+			'hostedby' => [
+				'songnguxyz' => [
+					'src' => 'https://static.wikitide.net/lhmnwiki/5/58/Footer.SN.xyz.svg',
+					'url' => 'https://songngu.xyz',
+					'alt' => 'Dự án được bảo quản bởi SongNgư.xyz',
+					'height' => '36',
+					'width' => '118',
+				],
+			],
+			'miraheze' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/lhmnwiki/1/1c/Miraheze.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
+					'alt' => 'Lưu trữ bởi Miraheze',
+					'height' => '36',
+					'width' => '36',
+				],
+			],
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/lhmnwiki/9/9b/MediaWiki.svg',
+					'url' => 'https://www.mediawiki.org',
+					'alt' => 'Xây dựng trên MediaWiki',
+					'height' => '42',
+					'width' => '110',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/lhmnwiki/4/4e/CC-BY-SA-4.svg',
+					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
+					'alt' => 'Creative Commons Ghi công - Chia sẻ tương tự 4.0 (CC BY-SA 4.0)',
+					'height' => '42',
+					'width' => '110',
+				],
+			],
+		],
+		'ablocksjourneywiki' => [
+			'conecorp' => [
+				'conecorp' => [
+					'src' => 'https://static.wikitide.net/superstarracerswiki/2/2a/Group_Icon.png',
+					'url' => 'https://conecorp.cc',
+					'alt' => 'An official CONECORP wiki',
+				],
+			],
+			'hostedby' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/utgwiki/8/81/Miraheze_badge.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/utgwiki/b/b0/PoweredByMediaWiki.svg',
+					'url' => 'https://www.mediawiki.org',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/utgwiki/0/0f/Badge-ccbysa.svg',
+					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
+				],
+			],
+		],
 		'aceistanwiki' => [
 			'poweredby' => [
 				'mediawiki' => [
@@ -1991,36 +2059,6 @@ $wgConf->settings += [
 				],
 			],
 		],
-		'itemasylumwiki' => [
-			'irwa' => [
-				'irwa' => [
-					'src' => 'https://static.wikitide.net/itemasylumwiki/8/8f/IRWA-logo.svg',
-					'url' => 'https://indierobloxwikis.org/',
-					'alt' => 'Part of the Independent Roblox Wiki Alliance',
-				],
-			],
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/itemasylumwiki/f/f7/Poweredbymediawiki_badge.svg',
-					'url' => 'https://www.mediawiki.org/',
-					'alt' => 'Powered by MediaWiki',
-				],
-			],
-			'miraheze' => [
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/itemasylumwiki/8/81/Miraheze_badge.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
-					'alt' => 'Hosted by Miraheze',
-				],
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/itemasylumwiki/b/b0/Ccbysa_badge.svg',
-					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
-					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
-				],
-			],
-		],
 		'ballgamewiki' => [
 			'poweredby' => [
 				'mediawiki' => [
@@ -2073,26 +2111,156 @@ $wgConf->settings += [
 				],
 			],
 		],
-		'cafewiki' => [
+		'blocktaleswiki' => [
 			'poweredby' => [
 				'mediawiki' => [
-					'src' => 'https://cafe.miraheze.org/w/img_auth.php/b/b0/PoweredByMediaWiki.svg',
+					'src' => 'https://static.wikitide.net/blocktaleswiki/9/9e/Footer-MediaWiki.svg',
 					'url' => 'https://www.mediawiki.org/',
 					'alt' => 'Powered by MediaWiki',
 				],
 			],
 			'miraheze' => [
 				'miraheze' => [
-					'src' => 'https://cafe.miraheze.org/w/img_auth.php/8/81/Miraheze_badge.svg',
+					'src' => 'https://static.wikitide.net/blocktaleswiki/8/89/Footer-Miraheze.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/blocktaleswiki/7/7a/Footer-License.svg',
+					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
+				],
+			],
+		],
+		'cafewiki' => [
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/cafewiki/b/b0/PoweredByMediaWiki.svg',
+					'url' => 'https://www.mediawiki.org/',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'miraheze' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/cafewiki/8/81/Miraheze_badge.svg',
 					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
 					'alt' => 'Hosted by Miraheze',
 				]
 			],
 			'copyright' => [
 				'copyright' => [
-					'src' => 'https://cafe.miraheze.org/w/img_auth.php/0/0f/Badge-ccbysa.svg',
+					'src' => 'https://static.wikitide.net/cafewiki/0/0f/Badge-ccbysa.svg',
 					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
 					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
+				],
+			],
+		],
+		'+capoeirawiki' => [
+			'iwf' => [
+				'iwf' => [
+					'src' => 'https://static.wikitide.net/capoeirawiki/3/38/Iwf_footer_icon.png',
+					'url' => 'https://independentwikifederation.org',
+					'alt' => 'Member of the Independent Wiki Federation',
+				],
+			],
+		],
+		'cgwiki' => [
+			'hostedby' => [
+				'songnguxyz' => [
+					'src' => 'https://static.wikitide.net/lhmnwiki/5/58/Footer.SN.xyz.svg',
+					'url' => 'https://songngu.xyz',
+					'alt' => 'Dự án được bảo quản bởi SongNgư.xyz',
+					'height' => '36',
+					'width' => '118',
+				],
+			],
+			'miraheze' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/lhmnwiki/1/1c/Miraheze.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
+					'alt' => 'Lưu trữ bởi Miraheze',
+					'height' => '36',
+					'width' => '36',
+				],
+			],
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/lhmnwiki/9/9b/MediaWiki.svg',
+					'url' => 'https://www.mediawiki.org',
+					'alt' => 'Xây dựng trên MediaWiki',
+					'height' => '42',
+					'width' => '110',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/cgwiki/2/27/CC_BY-NC-SA-4.svg',
+					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+					'alt' => 'Creative Commons Ghi công - Phi thương mại - Chia sẻ tương tự 4.0 (CC BY-NC-SA 4.0)',
+					'height' => '42',
+					'width' => '110',
+				],
+			],
+		],
+		'computerunionwiki' => [
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/computerunionwiki/f/f3/PoweredByMediawiki_2.svg',
+					'url' => 'https://www.mediawiki.org/',
+					'alt' => 'Powered by MediaWiki',
+				],
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/computerunionwiki/0/07/HostedByMiraheze_2.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/computerunionwiki/9/9e/AllRightsReserved.svg',
+					'url' => 'https://computerunion.miraheze.org/Project:Copyrights',
+					'alt' => 'All Rights Reserved',
+				],
+			],
+		],
+		'damnationwiki' => [
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/damnationwiki/a/a9/Poweredby_mediawiki_white.svg',
+					'url' => 'https://www.mediawiki.org/',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'miraheze' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/damnationwiki/1/11/Powered_by_Miraheze_%28no_box%29_white.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+		],
+		'doorswiki' => [
+			'hostedby' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/doorswiki/1/1c/Miraheze.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/doorswiki/2/2b/Powered_by_MediaWiki.svg',
+					'url' => 'https://www.mediawiki.org',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/doorswiki/f/ff/CC-BY-SA.svg',
+					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
 				],
 			],
 		],
@@ -2119,47 +2287,22 @@ $wgConf->settings += [
 				],
 			],
 		],
-		'fischwiki' => [
+		'etohwiki' => [
 			'poweredby' => [
 				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/cafewiki/b/b0/PoweredByMediaWiki.svg',
+					'src' => 'https://static.wikitide.net/etohwiki/a/a3/Badge-mediawiki-icon.svg',
 					'url' => 'https://www.mediawiki.org/',
 					'alt' => 'Powered by MediaWiki',
 				],
-			],
-			'miraheze' => [
 				'miraheze' => [
-					'src' => 'https://static.wikitide.net/cafewiki/8/81/Miraheze_badge.svg',
-					'url' => 'https://miraheze.org',
-					'alt' => 'Hosted by Miraheze',
-				]
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/fischwiki/3/33/Badge-ccbyncsa.svg',
-					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
-					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
-				],
-			],
-		],
-		'outlasterwiki' => [
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/outlasterwiki/b/b0/PoweredByMediaWiki.svg',
-					'url' => 'https://www.mediawiki.org/',
-					'alt' => 'Powered by MediaWiki',
-				],
-			],
-			'miraheze' => [
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/outlasterwiki/8/81/Miraheze_badge.svg',
+					'src' => 'https://static.wikitide.net/etohwiki/4/42/Badge-miraheze-icon.svg',
 					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
 					'alt' => 'Hosted by Miraheze',
-				]
+				],
 			],
 			'copyright' => [
 				'copyright' => [
-					'src' => 'https://static.wikitide.net/outlasterwiki/0/0f/Badge-ccbysa.svg',
+					'src' => 'https://static.wikitide.net/etohwiki/b/b6/Cc_by_sa.svg',
 					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
 					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
 				],
@@ -2188,6 +2331,29 @@ $wgConf->settings += [
 				],
 			],
 		],
+		'fischwiki' => [
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/cafewiki/b/b0/PoweredByMediaWiki.svg',
+					'url' => 'https://www.mediawiki.org/',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'miraheze' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/cafewiki/8/81/Miraheze_badge.svg',
+					'url' => 'https://miraheze.org',
+					'alt' => 'Hosted by Miraheze',
+				]
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/fischwiki/3/33/Badge-ccbyncsa.svg',
+					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
+				],
+			],
+		],
 		'fraudulentfronterawiki' => [
 			'poweredby' => [
 				'mediawiki' => [
@@ -2211,79 +2377,79 @@ $wgConf->settings += [
 				],
 			],
 		],
-		'100bangaiwiki' => [
+		'frdoorswiki' => [
 			'hostedby' => [
-				'songnguxyz' => [
-					'src' => 'https://static.wikitide.net/lhmnwiki/5/58/Footer.SN.xyz.svg',
-					'url' => 'https://songngu.xyz',
-					'alt' => 'Dự án được bảo quản bởi SongNgư.xyz',
-					'height' => '36',
-					'width' => '118',
-				],
-			],
-			'miraheze' => [
 				'miraheze' => [
-					'src' => 'https://static.wikitide.net/lhmnwiki/1/1c/Miraheze.svg',
+					'src' => 'https://static.wikitide.net/doorswiki/1/1c/Miraheze.svg',
 					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
-					'alt' => 'Lưu trữ bởi Miraheze',
-					'height' => '36',
-					'width' => '36',
+					'alt' => 'Hosted by Miraheze',
 				],
 			],
 			'poweredby' => [
 				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/lhmnwiki/9/9b/MediaWiki.svg',
+					'src' => 'https://static.wikitide.net/doorswiki/2/2b/Powered_by_MediaWiki.svg',
 					'url' => 'https://www.mediawiki.org',
-					'alt' => 'Xây dựng trên MediaWiki',
-					'height' => '42',
-					'width' => '110',
+					'alt' => 'Powered by MediaWiki',
 				],
 			],
 			'copyright' => [
 				'copyright' => [
-					'src' => 'https://static.wikitide.net/lhmnwiki/4/4e/CC-BY-SA-4.svg',
+					'src' => 'https://static.wikitide.net/doorswiki/f/ff/CC-BY-SA.svg',
 					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
-					'alt' => 'Creative Commons Ghi công - Chia sẻ tương tự 4.0 (CC BY-SA 4.0)',
-					'height' => '42',
-					'width' => '110',
+					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
 				],
 			],
 		],
-		'snxyzmetawiki' => [
-			'hostedby' => [
-				'songnguxyz' => [
-					'src' => 'https://static.wikitide.net/lhmnwiki/5/58/Footer.SN.xyz.svg',
-					'url' => 'https://songngu.xyz',
-					'alt' => 'Dự án được bảo quản bởi SongNgư.xyz',
-					'height' => '36',
-					'width' => '118',
-				],
-			],
-			'miraheze' => [
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/lhmnwiki/1/1c/Miraheze.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
-					'alt' => 'Lưu trữ bởi Miraheze',
-					'height' => '36',
-					'width' => '36',
+		'itemasylumwiki' => [
+			'irwa' => [
+				'irwa' => [
+					'src' => 'https://static.wikitide.net/itemasylumwiki/8/8f/IRWA-logo.svg',
+					'url' => 'https://indierobloxwikis.org/',
+					'alt' => 'Part of the Independent Roblox Wiki Alliance',
 				],
 			],
 			'poweredby' => [
 				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/lhmnwiki/9/9b/MediaWiki.svg',
-					'url' => 'https://www.mediawiki.org',
-					'alt' => 'Xây dựng trên MediaWiki',
-					'height' => '42',
-					'width' => '110',
+					'src' => 'https://static.wikitide.net/itemasylumwiki/f/f7/Poweredbymediawiki_badge.svg',
+					'url' => 'https://www.mediawiki.org/',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'miraheze' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/itemasylumwiki/8/81/Miraheze_badge.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
+					'alt' => 'Hosted by Miraheze',
 				],
 			],
 			'copyright' => [
 				'copyright' => [
-					'src' => 'https://static.wikitide.net/lhmnwiki/4/4e/CC-BY-SA-4.svg',
+					'src' => 'https://static.wikitide.net/itemasylumwiki/b/b0/Ccbysa_badge.svg',
+					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
+				],
+			],
+		],
+		'lectvswiki' => [
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/lectvswiki/9/9e/Footer-MediaWiki.svg',
+					'url' => 'https://www.mediawiki.org/',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'miraheze' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/lectvswiki/8/89/Footer-Miraheze.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/lectvswiki/7/7a/Footer-License.svg',
 					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
-					'alt' => 'Creative Commons Ghi công - Chia sẻ tương tự 4.0 (CC BY-SA 4.0)',
-					'height' => '42',
-					'width' => '110',
+					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
 				],
 			],
 		],
@@ -2332,7 +2498,120 @@ $wgConf->settings += [
 				],
 			],
 		],
-		'cgwiki' => [
+		'nicosnextbotswiki' => [
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/nicosnextbotswiki/0/05/Wiki_poweredbymediawiki.png',
+					'url' => 'https://www.mediawiki.org/',
+					'alt' => 'Powered by MediaWiki',
+				],
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/nicosnextbotswiki/e/eb/Wiki_hostedbymiraheze.png',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/nicosnextbotswiki/f/fc/Wiki_ccbyncsa.png',
+					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
+				],
+			],
+		],
+		'noobsincombatcoldfrontwiki' => [
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/noobsincombatcoldfrontwiki/b/b0/PoweredByMediaWiki.svg',
+					'url' => 'https://www.mediawiki.org/',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'miraheze' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/noobsincombatcoldfrontwiki/8/81/Miraheze_badge.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/noobsincombatcoldfrontwiki/a/a6/Final-cc-by-sa.svg',
+					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
+				],
+			],
+		],
+		'outlasterwiki' => [
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/outlasterwiki/b/b0/PoweredByMediaWiki.svg',
+					'url' => 'https://www.mediawiki.org/',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'miraheze' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/outlasterwiki/8/81/Miraheze_badge.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
+					'alt' => 'Hosted by Miraheze',
+				]
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/outlasterwiki/0/0f/Badge-ccbysa.svg',
+					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
+				],
+			],
+		],
+		'ptbrdoorswiki' => [
+			'hostedby' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/doorswiki/1/1c/Miraheze.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/doorswiki/2/2b/Powered_by_MediaWiki.svg',
+					'url' => 'https://www.mediawiki.org',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/doorswiki/f/ff/CC-BY-SA.svg',
+					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
+				],
+			],
+		],
+		'rabbidstakeoverwiki' => [
+			'hostedby' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/utgwiki/8/81/Miraheze_badge.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/utgwiki/b/b0/PoweredByMediaWiki.svg',
+					'url' => 'https://www.mediawiki.org',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/rabbidstakeoverwiki/3/33/Badge-ccbyncsa.svg',
+					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
+				],
+			],
+		],
+		'snxyzmetawiki' => [
 			'hostedby' => [
 				'songnguxyz' => [
 					'src' => 'https://static.wikitide.net/lhmnwiki/5/58/Footer.SN.xyz.svg',
@@ -2362,11 +2641,71 @@ $wgConf->settings += [
 			],
 			'copyright' => [
 				'copyright' => [
-					'src' => 'https://static.wikitide.net/cgwiki/2/27/CC_BY-NC-SA-4.svg',
-					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
-					'alt' => 'Creative Commons Ghi công - Phi thương mại - Chia sẻ tương tự 4.0 (CC BY-NC-SA 4.0)',
+					'src' => 'https://static.wikitide.net/lhmnwiki/4/4e/CC-BY-SA-4.svg',
+					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
+					'alt' => 'Creative Commons Ghi công - Chia sẻ tương tự 4.0 (CC BY-SA 4.0)',
 					'height' => '42',
 					'width' => '110',
+				],
+			],
+		],
+		'superblox64wiki' => [
+			'conecorp' => [
+				'conecorp' => [
+					'src' => 'https://static.wikitide.net/superstarracerswiki/2/2a/Group_Icon.png',
+					'url' => 'https://conecorp.cc',
+					'alt' => 'An official CONECORP wiki',
+				],
+			],
+			'hostedby' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/utgwiki/8/81/Miraheze_badge.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/utgwiki/b/b0/PoweredByMediaWiki.svg',
+					'url' => 'https://www.mediawiki.org',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/utgwiki/0/0f/Badge-ccbysa.svg',
+					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
+				],
+			],
+		],
+		'superstarracerswiki' => [
+			'conecorp' => [
+				'conecorp' => [
+					'src' => 'https://static.wikitide.net/superstarracerswiki/2/2a/Group_Icon.png',
+					'url' => 'https://conecorp.cc',
+					'alt' => 'An official CONECORP wiki',
+				],
+			],
+			'hostedby' => [
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/utgwiki/8/81/Miraheze_badge.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/utgwiki/b/b0/PoweredByMediaWiki.svg',
+					'url' => 'https://www.mediawiki.org',
+					'alt' => 'Powered by MediaWiki',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/utgwiki/0/0f/Badge-ccbysa.svg',
+					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
 				],
 			],
 		],
@@ -2419,6 +2758,27 @@ $wgConf->settings += [
 					'alt' => 'Hosted by Miraheze',
 				]
 			]
+		],
+		'toyboxfunhousewiki' => [
+			'poweredby' => [
+				'mediawiki' => [
+					'src' => 'https://static.wikitide.net/toyboxfunhousewiki/3/3c/Powered_by_MEDIAWIKI.png',
+					'url' => 'https://www.mediawiki.org/',
+					'alt' => 'Powered by MediaWiki',
+				],
+				'miraheze' => [
+					'src' => 'https://static.wikitide.net/toyboxfunhousewiki/9/9b/Hosted_by_MIRAHEZE.png',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
+					'alt' => 'Hosted by Miraheze',
+				],
+			],
+			'copyright' => [
+				'copyright' => [
+					'src' => 'https://static.wikitide.net/toyboxfunhousewiki/0/0e/CC_BY-SA.png',
+					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
+					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
+				],
+			],
 		],
 		'universalunionwiki' => [
 			'hostedby' => [
@@ -2481,29 +2841,6 @@ $wgConf->settings += [
 				],
 			],
 		],
-		'rabbidstakeoverwiki' => [
-			'hostedby' => [
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/utgwiki/8/81/Miraheze_badge.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
-					'alt' => 'Hosted by Miraheze',
-				],
-			],
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/utgwiki/b/b0/PoweredByMediaWiki.svg',
-					'url' => 'https://www.mediawiki.org',
-					'alt' => 'Powered by MediaWiki',
-				],
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/rabbidstakeoverwiki/3/33/Badge-ccbyncsa.svg',
-					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
-					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
-				],
-			],
-		],
 		'yonicversewiki' => [
 			'hostedby' => [
 				'miraheze' => [
@@ -2534,124 +2871,24 @@ $wgConf->settings += [
 				],
 			],
 		],
-		'damnationwiki' => [
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/damnationwiki/a/a9/Poweredby_mediawiki_white.svg',
-					'url' => 'https://www.mediawiki.org/',
-					'alt' => 'Powered by MediaWiki',
-				],
-			],
-			'miraheze' => [
+		'zhdoorswiki' => [
+			'hostedby' => [
 				'miraheze' => [
-					'src' => 'https://static.wikitide.net/damnationwiki/1/11/Powered_by_Miraheze_%28no_box%29_white.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
+					'src' => 'https://static.wikitide.net/doorswiki/1/1c/Miraheze.svg',
+					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
 					'alt' => 'Hosted by Miraheze',
 				],
 			],
-		],
-		'noobsincombatcoldfrontwiki' => [
 			'poweredby' => [
 				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/noobsincombatcoldfrontwiki/b/b0/PoweredByMediaWiki.svg',
-					'url' => 'https://www.mediawiki.org/',
+					'src' => 'https://static.wikitide.net/doorswiki/2/2b/Powered_by_MediaWiki.svg',
+					'url' => 'https://www.mediawiki.org',
 					'alt' => 'Powered by MediaWiki',
-				],
-			],
-			'miraheze' => [
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/noobsincombatcoldfrontwiki/8/81/Miraheze_badge.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
-					'alt' => 'Hosted by Miraheze',
 				],
 			],
 			'copyright' => [
 				'copyright' => [
-					'src' => 'https://static.wikitide.net/noobsincombatcoldfrontwiki/a/a6/Final-cc-by-sa.svg',
-					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
-					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
-				],
-			],
-		],
-		'computerunionwiki' => [
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/computerunionwiki/f/f3/PoweredByMediawiki_2.svg',
-					'url' => 'https://www.mediawiki.org/',
-					'alt' => 'Powered by MediaWiki',
-				],
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/computerunionwiki/0/07/HostedByMiraheze_2.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
-					'alt' => 'Hosted by Miraheze',
-				],
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/computerunionwiki/9/9e/AllRightsReserved.svg',
-					'url' => 'https://computerunion.miraheze.org/Project:Copyrights',
-					'alt' => 'All Rights Reserved',
-				],
-			],
-		],
-		'toyboxfunhousewiki' => [
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/toyboxfunhousewiki/3/3c/Powered_by_MEDIAWIKI.png',
-					'url' => 'https://www.mediawiki.org/',
-					'alt' => 'Powered by MediaWiki',
-				],
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/toyboxfunhousewiki/9/9b/Hosted_by_MIRAHEZE.png',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
-					'alt' => 'Hosted by Miraheze',
-				],
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/toyboxfunhousewiki/0/0e/CC_BY-SA.png',
-					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
-					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
-				],
-			],
-		],
-		'nicosnextbotswiki' => [
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/nicosnextbotswiki/0/05/Wiki_poweredbymediawiki.png',
-					'url' => 'https://www.mediawiki.org/',
-					'alt' => 'Powered by MediaWiki',
-				],
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/nicosnextbotswiki/e/eb/Wiki_hostedbymiraheze.png',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
-					'alt' => 'Hosted by Miraheze',
-				],
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/nicosnextbotswiki/f/fc/Wiki_ccbyncsa.png',
-					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
-					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
-				],
-			],
-		],
-		'etohwiki' => [
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/etohwiki/a/a3/Badge-mediawiki-icon.svg',
-					'url' => 'https://www.mediawiki.org/',
-					'alt' => 'Powered by MediaWiki',
-				],
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/etohwiki/4/42/Badge-miraheze-icon.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
-					'alt' => 'Hosted by Miraheze',
-				],
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/etohwiki/b/b6/Cc_by_sa.svg',
+					'src' => 'https://static.wikitide.net/doorswiki/f/ff/CC-BY-SA.svg',
 					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
 					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
 				],
@@ -2677,151 +2914,6 @@ $wgConf->settings += [
 					'src' => 'https://static.wikitide.net/zvhwiki/6/6c/CC_BY-NC-SA_Footer.svg',
 					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
 					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
-				],
-			],
-		],
-		'ablocksjourneywiki' => [
-			'conecorp' => [
-				'conecorp' => [
-					'src' => 'https://static.wikitide.net/superstarracerswiki/2/2a/Group_Icon.png',
-					'url' => 'https://conecorp.cc',
-					'alt' => 'An official CONECORP wiki',
-				],
-			],
-			'hostedby' => [
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/utgwiki/8/81/Miraheze_badge.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
-					'alt' => 'Hosted by Miraheze',
-				],
-			],
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/utgwiki/b/b0/PoweredByMediaWiki.svg',
-					'url' => 'https://www.mediawiki.org',
-					'alt' => 'Powered by MediaWiki',
-				],
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/utgwiki/0/0f/Badge-ccbysa.svg',
-					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
-					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
-				],
-			],
-		],
-		'superstarracerswiki' => [
-			'conecorp' => [
-				'conecorp' => [
-					'src' => 'https://static.wikitide.net/superstarracerswiki/2/2a/Group_Icon.png',
-					'url' => 'https://conecorp.cc',
-					'alt' => 'An official CONECORP wiki',
-				],
-			],
-			'hostedby' => [
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/utgwiki/8/81/Miraheze_badge.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
-					'alt' => 'Hosted by Miraheze',
-				],
-			],
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/utgwiki/b/b0/PoweredByMediaWiki.svg',
-					'url' => 'https://www.mediawiki.org',
-					'alt' => 'Powered by MediaWiki',
-				],
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/utgwiki/0/0f/Badge-ccbysa.svg',
-					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
-					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
-				],
-			],
-		],
-		'superblox64wiki' => [
-			'conecorp' => [
-				'conecorp' => [
-					'src' => 'https://static.wikitide.net/superstarracerswiki/2/2a/Group_Icon.png',
-					'url' => 'https://conecorp.cc',
-					'alt' => 'An official CONECORP wiki',
-				],
-			],
-			'hostedby' => [
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/utgwiki/8/81/Miraheze_badge.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze',
-					'alt' => 'Hosted by Miraheze',
-				],
-			],
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/utgwiki/b/b0/PoweredByMediaWiki.svg',
-					'url' => 'https://www.mediawiki.org',
-					'alt' => 'Powered by MediaWiki',
-				],
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/utgwiki/0/0f/Badge-ccbysa.svg',
-					'url' => 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
-					'alt' => 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
-				],
-			],
-		],
-		'lectvswiki' => [
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/lectvswiki/9/9e/Footer-MediaWiki.svg',
-					'url' => 'https://www.mediawiki.org/',
-					'alt' => 'Powered by MediaWiki',
-				],
-			],
-			'miraheze' => [
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/lectvswiki/8/89/Footer-Miraheze.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
-					'alt' => 'Hosted by Miraheze',
-				],
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/lectvswiki/7/7a/Footer-License.svg',
-					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
-					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
-				],
-			],
-		],
-		'blocktaleswiki' => [
-			'poweredby' => [
-				'mediawiki' => [
-					'src' => 'https://static.wikitide.net/blocktaleswiki/9/9e/Footer-MediaWiki.svg',
-					'url' => 'https://www.mediawiki.org/',
-					'alt' => 'Powered by MediaWiki',
-				],
-			],
-			'miraheze' => [
-				'miraheze' => [
-					'src' => 'https://static.wikitide.net/blocktaleswiki/8/89/Footer-Miraheze.svg',
-					'url' => 'https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta',
-					'alt' => 'Hosted by Miraheze',
-				],
-			],
-			'copyright' => [
-				'copyright' => [
-					'src' => 'https://static.wikitide.net/blocktaleswiki/7/7a/Footer-License.svg',
-					'url' => 'https://creativecommons.org/licenses/by-sa/4.0/',
-					'alt' => 'Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
-				],
-			],
-		],
-		'+capoeirawiki' => [
-			'iwf' => [
-				'iwf' => [
-					'src' => 'https://static.wikitide.net/capoeirawiki/3/38/Iwf_footer_icon.png',
-					'url' => 'https://independentwikifederation.org',
-					'alt' => 'Member of the Independent Wiki Federation',
 				],
 			],
 		],
@@ -3241,7 +3333,7 @@ $wgConf->settings += [
 	'wgExtraLanguageNames' => [
 		'default' => [
 			// Prevent mh from being treated as an interlanguage link (T11615)
-			'mh' => '',
+			'mh' => null,
 		],
 		'+anduranwiki' => [
 			'x-qan' => 'Andurnsprek',
