@@ -312,6 +312,33 @@ switch ( $wgDBname ) {
 			],
 		];
 		break;
+	case 'assassinscreedwiki':
+	case 'bluearchivezhwiki':
+	case 'bolanqiuwiki':
+	case 'fukafanswiki':
+	case 'memepediawiki':
+	case 'redstonewiki':
+	case 'utaitewiki':
+	case 'vocaloidlyricswiki':
+	case 'xyywiki':
+		$wgMirahezeMagicCSPHeaderOverrides = [
+			'frame-src' => [
+				'player.bilibili.com',
+				'www.bilibili.com/blackboard/webplayer/',
+			],
+			'img-src' => [
+				'*.hdslb.com',
+			],
+			'connect-src' => [
+				'api.bilibili.com',
+				'data.bilibili.com',
+				'broadcast.chat.bilibili.com',
+			],
+			'media-src' => [
+				'upos-hz-mirrorakam.akamaized.net',
+			],
+		];
+		break;
 	default:
 		break;
 }

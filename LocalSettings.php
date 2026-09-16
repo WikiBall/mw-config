@@ -946,6 +946,51 @@ $wgConf->settings += [
 	'wgCreateWikiAIThreshold' => [
 		'default' => -1,
 	],
+	'wgCreateWikiCacheDirectory' => [
+		'default' => '/srv/mediawiki/cache',
+	],
+	'wgCreateWikiCacheUpdateDebugAccessKeyHeader' => [
+		'default' => 'X-WikiTide-Debug-Access-Key',
+	],
+	'wgCreateWikiCacheUpdateDebugHeader' => [
+		'default' => 'X-WikiTide-Debug',
+	],
+	'wgCreateWikiCacheUpdateDomain' => [
+		'default' => 'meta.miraheze.org',
+		'beta' => 'meta.mirabeta.org',
+	],
+	'wgCreateWikiCacheUpdateRestEnabled' => [
+		'default' => true,
+	],
+	'wgCreateWikiCacheUpdateServers' => [
+		'default' => [
+			'mw151',
+			'mw152',
+			'mw153',
+			'mw161',
+			'mw162',
+			'mw163',
+			'mw171',
+			'mw172',
+			'mw173',
+			'mw181',
+			'mw182',
+			'mw183',
+			'mw191',
+			'mw192',
+			'mw193',
+			'mw201',
+			'mw202',
+			'mw203',
+			'mwtask151',
+			'mwtask161',
+			'mwtask171',
+			'mwtask181',
+		],
+		'beta' => [
+			'test151',
+		],
+	],
 	'wgCreateWikiDisallowedSubdomains' => [
 		'default' => [
 			'(.*)wikiball(.*)',
@@ -1200,9 +1245,6 @@ $wgConf->settings += [
 			'removed' => 245,
 			'deleted' => 31
 		],
-	],
-	'wgCreateWikiCacheDirectory' => [
-		'default' => '/srv/mediawiki/cache'
 	],
 	'wgCreateWikiCategories' => [
 		'default' => [
@@ -1880,11 +1922,6 @@ $wgConf->settings += [
 				'review' => 1,
 				'autoreview' => 1,
 			],
-		],
-	],
-	'wgFlaggedRevsTagsAuto' => [
-		'default' => [
-			'accuracy' => 1,
 		],
 	],
 	'wgFlaggedRevsAutopromote' => [
@@ -3335,6 +3372,10 @@ $wgConf->settings += [
 			// Prevent mh from being treated as an interlanguage link (T11615)
 			'mh' => null,
 		],
+		'1.46' => [
+			// Prevent mh from being treated as an interlanguage link (T11615)
+			'mh' => '',
+		],
 		'+anduranwiki' => [
 			'x-qan' => 'Andurnsprek',
 		],
@@ -3837,6 +3878,7 @@ $wgConf->settings += [
 		'urbanshadewiki' => [ 'roblox://' ],
 		'utgwiki' => [ 'roblox://' ],
 		'farmwiki' => [ 'roblox://' ],
+		'reticulumwiki' => [ 'nomadnetwork://', 'rns://' ],
 		// file protocol only allowed on private wikis
 		'rainversewiki' => [ 'gemini://' ],
 		'100acgwiki' => [ 'infoflow://' ],
@@ -3954,6 +3996,48 @@ $wgConf->settings += [
 	// ManageWiki
 	'wgManageWikiCacheDirectory' => [
 		'default' => '/srv/mediawiki/cache',
+	],
+	'wgManageWikiCacheUpdateDebugAccessKeyHeader' => [
+		'default' => 'X-WikiTide-Debug-Access-Key',
+	],
+	'wgManageWikiCacheUpdateDebugHeader' => [
+		'default' => 'X-WikiTide-Debug',
+	],
+	'wgManageWikiCacheUpdateDomain' => [
+		'default' => 'meta.miraheze.org',
+		'beta' => 'meta.mirabeta.org',
+	],
+	'wgManageWikiCacheUpdateRestEnabled' => [
+		'default' => true,
+	],
+	'wgManageWikiCacheUpdateServers' => [
+		'default' => [
+			'mw151',
+			'mw152',
+			'mw153',
+			'mw161',
+			'mw162',
+			'mw163',
+			'mw171',
+			'mw172',
+			'mw173',
+			'mw181',
+			'mw182',
+			'mw183',
+			'mw191',
+			'mw192',
+			'mw193',
+			'mw201',
+			'mw202',
+			'mw203',
+			'mwtask151',
+			'mwtask161',
+			'mwtask171',
+			'mwtask181',
+		],
+		'beta' => [
+			'test151',
+		],
 	],
 	'wgManageWikiExtensionsDefault' => [
 		// WARNING: When adding a new extension here, please check whether there are any SQL files that need to be run
@@ -5785,6 +5869,7 @@ $wgConf->settings += [
 		'+mappingwiki' => [
 			'vector-limited-width' => 0,
 			'vector-theme' => 'os',
+			'minerva-theme' => 'os',
 		],
 		'+mariowiki' => [
 			'rcenhancedfilters-disable' => 1,
@@ -6603,6 +6688,19 @@ $wgConf->settings += [
 	// Site notice opt out
 	'wmgSiteNoticeOptOut' => [
 		'default' => false,
+	],
+
+	// Sitemap
+	'wgSitemapNamespaces' => [
+		'default' => [
+			NS_MAIN,
+			NS_USER,
+			NS_PROJECT,
+			NS_TEMPLATE,
+			NS_HELP,
+			// NS_MODULE
+			828,
+		],
 	],
 
 	// Skins
@@ -8114,8 +8212,19 @@ $wi::$disabledExtensions = [
 	'video' => 'Incompatible with MediaWiki 1.45',
 
 	// Are these still incompatible?
-	'snapwikiskin' => 'Incompatible with MediaWiki 1.45'
+	'snapwikiskin' => 'Incompatible with MediaWiki 1.45',
 ];
+
+if ( $wi->version >= 1.46 ) {
+	$wi::$disabledExtensions += [
+		'autocreatepage' => 'Disabled with the MediaWiki 1.46 upgrade.',
+		'cleanchanges' => 'Disabled with the MediaWiki 1.46 upgrade.',
+		'datatransfer' => 'Disabled with the MediaWiki 1.46 upgrade.',
+		'featuredfeeds' => 'Disabled with the MediaWiki 1.46 upgrade.',
+		'geogebra' => 'Disabled with the MediaWiki 1.46 upgrade.',
+		'magicnocache' => 'Disabled with the MediaWiki 1.46 upgrade.',
+	];
+}
 
 $globals = MirahezeFunctions::getConfigGlobals();
 
